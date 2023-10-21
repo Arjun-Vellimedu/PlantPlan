@@ -1,0 +1,47 @@
+* {
+    font-family: 'Avenir', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px;
+    background-image: url('skyBackground.avif');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+/*
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('tree.png');
+    padding: 25px;
+}
+
+.container3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('Tree1.png');
+
+    padding: 0px;
+}
+*/
+
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 20px; /* Add some space from the top */
+    border-radius: 50%;
+}
+
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
+
+body {  /*background */
+    color: black;
+}

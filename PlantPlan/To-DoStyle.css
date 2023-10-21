@@ -1,48 +1,70 @@
-* {
+* { /* Overall formatting, using Avenir font */
     margin: 0;
     padding: 0;
     font-family: 'Avenir', sans-serif;
     box-sizing: border-box;
 }
+/* Background color */
 .container{
-    width: 100%;
     min-height: 100vh;
     background: lightgreen;
     padding: 10px;
 }
+/* Header */
+.container h1{
+    color: #8BB174;
+    font-family: 'Futura', sans-serif;
+    font-size: 15px;
+    
+    text-align: right; /* Right-align the text within the container */
+}
+.container h1:hover{
+    color: white;
+    transition:all 1s ease;
+    
+}
 h1{
     text-align: center;
 }
+
+/* Adding tasks */
 .Task-Addition{
-    width: 100%;
     max-width: 540px;
     background: white;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
+
+ /* formatting of text "To-Do" List */
 .Task-Addition h2{
     color: black;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
+
+ /* field for typing in new tasks */
 .add {
     background: lightgreen;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+ /* creates input field */
 input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
+   border: none;
+    outline: none; /* we want the input field to blend into the box behind it*/
+    background: transparent; 
     padding: 10px;
 }
+
+/* button with */
 button {
     border: none;
     outline: none;
@@ -53,16 +75,16 @@ button {
     border-radius: 40px;
 }
 
-ul li {
+ul li { /* formatting of the text in the unordered list itself */
     list-style: none;
-    font-size: 20px;
-    padding: 12px 8px 12px 50px;
+    font-size: 18px;
+    padding: 12px 6px 12px 50px;
     user-select: none;
     cursor: pointer;
     position:relative;
 }
 
-ul li:before{ /* Creating unchecked circles */
+ul li:before{ /* Creating unchecked circles in the list */
     content: '';
     position: absolute;
     height: 28px; 
@@ -75,25 +97,25 @@ ul li:before{ /* Creating unchecked circles */
     left: 8px;
 }
 
-ul li.checked{
+ul li.checked{ /* strikethrough formatting after list items are checked */
     color: gray;
     text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before{ 
     background-image: url('checked.png');
 }
-ul li span{
+ul li span{ /* delete button work, coloring x and creating black circle */
     position: absolute;
     right: 0;
     top: 5px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     font-size: 22px;
-    color: #555;
+    color: #f30a0a;
     line-height: 40px;
     text-align: center;
-    border-radius:50%;
+    border-radius:50%; /* circle command for future use */
 }
 ul li span:hover{
     background: black;

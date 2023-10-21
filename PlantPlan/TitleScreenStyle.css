@@ -41,6 +41,7 @@ body {  /*background*/
     border-radius: 15px 15px 0 0;
 }
 
+/* Card images */
 .car-1{ 
     background-image: url("toDoCard.jpeg");
 }
@@ -50,17 +51,14 @@ body {  /*background*/
 .car-3{
     background-image: url("calendar.png");
 }
-.card h2{
-    text-align: center;
-    padding: 10px 10px 0;
 
+.card:hover{ /* hover animation */
+    background-color: rgb(158,227,125);
+    color: white;
+    cursor:pointer;
+    transform:scale(1.10, 1.10);
+    transition:all 1s ease;
 }
-
-.card p{
-    text-align: center;
-    padding: 0 10px 10px;
-}
-
 .card a{ /* hyperlink */
     /* margin-top: 35px; */
     background-color: black;
@@ -72,10 +70,17 @@ body {  /*background*/
     text-decoration: none;
 }
 
-.card:hover{ /* hover animation */
-    background-color: rgb(158,227,125);
-    color: white;
-    cursor:pointer;
-    transform:scale(1.10, 1.10);
-    transition:all 1s ease;
+/* Caption formatting */
+.card h2{
+    text-align: center;
+    padding: 10px 10px 0;
+
 }
+
+/* Description formatting */
+.card p{
+    text-align: center;
+    padding: 0 10px 10px;
+}
+
+
